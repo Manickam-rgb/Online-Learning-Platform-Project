@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dbe7ff;
+    position: relative;
+}
+
+/* Styling for Register.html */
+.register-background-box.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+}
+.register-background-box.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #dbe7ff;
+    z-index: -1;
+}
+.reg-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0 0 25px #9cb5f9;
+    
+    overflow: hidden;
+    width: 70%;
+    height:80%;
+    
+}
+.reg-left-panel {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f9f9f9; */
+}
+.reg-left-panel img {
+    width: 85%;
+    height: auto;
+}
+.reg-right-panel {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 40%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reg-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
+}
+.reg-logo img {
+    height: 75px;
+}
+.reg-right-panel h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.User-box,
+.Password-box {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    /* margin-top: 8px; */
+    border: none;
+    border-bottom: 2px solid #adadad;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+}
+label {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    font-size: 14px;
+    color: #000;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 0.85rem;
+    color: #3062d9;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3062d9;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: white;
+    color: #3062d9;
+    border: 1px solid #3062d9;
+    box-shadow: 0 0 25px #a5c0fd,0 0 25px #a5c0fd,0 0 25px #a5c0fd,0 0 25px #a5c0fd;
+}
+p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+a {
+    color: #3062d9;
+    text-decoration: none;
+    
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Login.html */
+
+.background-box.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #dbe7ff;
+    z-index: -1;
+}
+.background-box.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+}
+.container {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 25px #9cb5f9;
+    overflow: hidden;
+}
+.left-panel {
+    width: 40%;
+    
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex:1;
+}
+.right-panel {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    flex: 1;
+}
+.right-panel img {
+    width: 95%;
+    height: auto;
+}
+.logo {
+    margin-bottom: 20px;
+}
+.logo img {
+    height: 75px;
+}
+h4 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.register-link {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+.register-link a {
+    color: #3062d9;
+    text-decoration: none;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}
