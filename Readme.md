@@ -53,7 +53,11 @@ Learn+ is an educational dashboard platform designed to manage user courses, spe
          database: 'olp',
      });
      ```
-4. Start the backend server:
+4.Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```  
+5. Start the backend server:
    ```bash
    npm start or node server.js
    ```
