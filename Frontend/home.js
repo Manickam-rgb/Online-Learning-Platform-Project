@@ -35,6 +35,18 @@ openPopupButtons.forEach(button => {
     // });
 // });
 
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+  
+    if (sidebar.style.display === 'flex') {
+      // Hide the sidebar
+      sidebar.style.display = 'none';
+    } else {
+      // Show the sidebar
+      sidebar.style.display = 'flex';
+    }
+  }
+
 // Close the popup when the "X" close button or the "Cancel" button is clicked
 closePopup.addEventListener('click', () => {
     popup.style.display = 'none';
